@@ -59,13 +59,16 @@ flowchart TD
 1. Open Wireshark and start capturing on the active interface (Wi-
 Fi/Ethernet).
 
+
 <img width="1920" height="1080" alt="Screenshot 2025-09-27 234621" src="https://github.com/user-attachments/assets/2f654fe3-d883-4d0e-889a-01d80527cbbf" />
 
 
 2. Perform activities like opening a website or sending an email through a
 client (e.g., Gmail via browser or Thunderbird).
 
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1c285403-5835-4891-b7ed-0a4315944146" />
+
 
 4. Stop the capture once done.
 
@@ -84,11 +87,14 @@ headers.
 o Follow TCP Stream to reconstruct page request flow:
 ▪ Right-click a packet → Follow → TCP Stream.
 
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b93f033d-4c26-4ea7-b40d-e8b30730213f" />
+
 
 Analyze DNS Queries:
 o Filter: dns
 o Reveal domains the browser tried to resolve.
+
 
 <img width="1920" height="1080" alt="Screenshot 2025-09-28 000112" src="https://github.com/user-attachments/assets/44d652fb-9e8c-429f-bb01-834e6778e7a3" />
 
@@ -98,6 +104,7 @@ o Reveal domains the browser tried to resolve.
 o For POP3: tcp.port == 110
 o For SMTP: tcp.port == 25 or 587
 o For IMAP: tcp.port == 143 or 993
+
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7cc806d8-a833-4178-9e27-1dd22030f82b" />
 
@@ -110,12 +117,14 @@ unencrypted.
 
 <img width="1919" height="459" alt="Screenshot 2025-09-28 004549" src="https://github.com/user-attachments/assets/60a19f8d-a383-4002-8283-faf59ccf3514" />
 
+
 5. Extract Email Header Fields:
 o Analyze From, To, Subject, Date, Message-ID, and relay servers used
 in sending the email.
 
 
 <img width="1920" height="1080" alt="Screenshot 2025-09-28 004647" src="https://github.com/user-attachments/assets/710b51ec-efa9-495a-95d6-efc84b2fde45" />
+
 
 ## OUTPUT:
 Captured Web Activity and Email Header Information
