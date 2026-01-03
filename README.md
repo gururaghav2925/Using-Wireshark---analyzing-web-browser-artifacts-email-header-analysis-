@@ -109,7 +109,11 @@ o For IMAP: tcp.port == 143 or 993
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7cc806d8-a833-4178-9e27-1dd22030f82b" />
 
 
-3. Locate email data:
+2. Install Thunderbird or any other email Service.
+3. Send a email on ThunderBird while the wireshark Scanning on the background . 
+
+
+4. Locate email data:
 o Look for SMTP packets to see sender/receiver email addresses.
 o Use "Follow TCP Stream" to view the full email headers and body if
 unencrypted.
